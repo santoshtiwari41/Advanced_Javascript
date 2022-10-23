@@ -8,5 +8,24 @@
 </head>
 <body>
    <h1> This is asynchronous javascript</h1> 
+   <p id="start"></p>
+   <p id="middle"></p>
+   <p id="end"></p>
+   <script>
+       document.getElementById('start').innerHTML='start'  
+      setTimeout(function()
+      {
+          document.getElementById('middle').innerHTML='this is midddle  content'
+      },5000)
+      document.getElementById('end').innerHTML='end'
+//    console.log('start')  
+//       setTimeout(function()
+//       {
+//          console.log('this is middle content')
+//       },5000)
+//       console.log('end')
+       
+       
+       </script>
 </body>
 </html>
